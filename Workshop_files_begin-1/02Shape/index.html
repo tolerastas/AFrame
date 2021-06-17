@@ -11,11 +11,17 @@
     <a-scene background="color: #333333">
       <a-box id="myBox"
         width="1"
-        height="1"
-        depth="1"
-        color="#FFFF00" 
+        height="-1"
+        depth="20"
+        position="-2 0 0"
+        rotation="0 0 0"
+        scale="1 1 1"
+        color="#BBAA33"
         shadow>
       </a-box>
+      <a-cylinder color="crimson" height="3" radius="0.1"></a-cylinder>
+      <a-sphere color="green" position="-2.5 3.5 0" radius="1"></a-sphere>
+      <a-torus-knot color="#B84A39" position="-3 -5 0" arc="180" p="5" q="7" radius="5" radius-tubular="0.1"></a-torus-knot>
     </a-scene>
   </body>
 </html>
