@@ -8,7 +8,7 @@
 	myOtherBox.object3D.rotation.y += rotationSpeed;
  	console.log(myOtherBox.object3D.rotation.x);
 	rotationSpeed +== 0.01;
-	if (rotationSpeed > 1) {
+	if (rotationSpeed > 10) {
 		rotationSpeed = 0.01;
 		}
  }
