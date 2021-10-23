@@ -20,7 +20,12 @@
         <a-entity id="mouseCursor"
           cursor="fuse: true; fuseTimeout: 1500">
         </a-entity>
-        <a-image src="#cat" position="0 0 -0.2" ></a-image>
+        <a-ring id="cursorRing" 
+          position="0 0 -1"
+          radius-inner= "0.06"
+          radius-outer= "0.07"
+          material="color: blue; shader: flat">
+        </a-ring>
       </a-camera>
       
       <a-box id="myBox" 
