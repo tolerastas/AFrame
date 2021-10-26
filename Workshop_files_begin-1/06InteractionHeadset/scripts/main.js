@@ -6,7 +6,7 @@ function spin(){
 	myOtherBox.object3D.rotation.x += rotationSpeed;
 	myOtherBox.object3D.rotation.y += rotationSpeed;
 	myOtherBox.object3D.rotation.z += rotationSpeed/2;
-	//console.log(myOtherBox.object3D.rotation);
+	console.log(myOtherBox.object3D.rotation);
 }
 setInterval(spin, 10);
 
@@ -33,10 +33,10 @@ myOtherBox.addEventListener('mouseleave', function(){
  	myOtherBox.object3D.scale.x *= growspeed;
  	myOtherBox.object3D.scale.y *= growspeed;
  	myOtherBox.object3D.scale.z *= growspeed;
- 	//console.log(myOtherBox.object3D.scale);
+ 	console.log(myOtherBox.object3D.scale);
  }
 
- myOtherBox.addEventListener('click', function(){ // uses a fuse
+ myOtherBox.addEventListener('mouseenter', function(){ // uses a fuse
  	grow();
  	console.log('grew');
  });
